@@ -120,10 +120,33 @@
               </div>
             </div>
           </div>
+          <!-- Another rhombus card -->
+          <div class="card w-72 shadow-xl pt-8 mt-12">
+            <figure><img class="w-44" src="/images/rhombus.png" alt="rhombus" /></figure>
+            <div class="card-body text-center">
+              <h2 class="font-semibold text-2xl">Rhombus</h2>
+              <p>Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></p>
+              <p>
+                <!-- rhombus first radius -->
+                <input id="rhombus-first-diagonal" type="text" class="text-sm w-16 text-center" placeholder="diagonal (1)">
+                <span class="ml-1">cm</span>
+                <!-- rhombus second radius -->
+                <input id="rhombus-second-diagonal" type="text" class="text-sm w-16 ml-3 text-center" placeholder="diagonal (2)">
+                <span class="ml-1">cm</span>
+              </p>
+              <p class="font-medium">Area: <span id="rhombus-area" class="font-bold text-2xl">0</span> cm<sup>2</sup></p>
+              <div class="card-actions">
+                <button onclick="calculateRhombusArea()" class="w-full btn btn-primary">Calculate</button>
+              </div>
+            </div>
+          </div>
         </div>
         <!-- area calculator -->
-        <div class="flex-initial w-[400px]">
-          <div class="text-3xl">Area calculator</div>
+        <div class="flex-initial w-[400px] shadow-xl">
+          <div class="text-3xl text-center font-semibold"><u>Area calculator</u></div>
+          <div id="calculation-entry" class="text-center mt-5">
+
+          </div>
         </div>
       </section>
     </main>
